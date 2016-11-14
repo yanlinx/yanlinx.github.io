@@ -6,23 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Leo</title>
+  <title>利用GitHub+hexo搭建个人博客—元学习实践 | Leo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="纸上得来终觉浅，绝知此事要躬行
 
 有些东西，你会的时候就觉得特别简单，不会的时候就会认为特别难。可是又有谁一开始就什么都会呢？只不过看你是否愿意做，愿意接受最初的起点罢了。
 元学习课上，老师提到在学习初期建立正循环的重要性，可以通过尝试做些小项目给自己以成就感，再找机会练大项目。对我而言，建立个人博客既是练手的一个小项目，也可以把它当成我重拾写作的一种仪式，一个助推器。毕竟不能为了搭建而搭建，文">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leo">
+<meta property="og:title" content="利用GitHub+hexo搭建个人博客—元学习实践">
 <meta property="og:url" content="http://yoursite.com/2016/11/14/利用GitHub-hexo搭建个人博客—元学习实践/index.html">
 <meta property="og:site_name" content="Leo">
 <meta property="og:description" content="纸上得来终觉浅，绝知此事要躬行
 
 有些东西，你会的时候就觉得特别简单，不会的时候就会认为特别难。可是又有谁一开始就什么都会呢？只不过看你是否愿意做，愿意接受最初的起点罢了。
 元学习课上，老师提到在学习初期建立正循环的重要性，可以通过尝试做些小项目给自己以成就感，再找机会练大项目。对我而言，建立个人博客既是练手的一个小项目，也可以把它当成我重拾写作的一种仪式，一个助推器。毕竟不能为了搭建而搭建，文">
-<meta property="og:updated_time" content="2016-11-14T04:29:20.661Z">
+<meta property="og:updated_time" content="2016-11-14T04:31:43.005Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leo">
+<meta name="twitter:title" content="利用GitHub+hexo搭建个人博客—元学习实践">
 <meta name="twitter:description" content="纸上得来终觉浅，绝知此事要躬行
 
 有些东西，你会的时候就觉得特别简单，不会的时候就会认为特别难。可是又有谁一开始就什么都会呢？只不过看你是否愿意做，愿意接受最初的起点罢了。
@@ -160,6 +160,16 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      利用GitHub+hexo搭建个人博客—元学习实践
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
@@ -171,11 +181,9 @@
 <p>建站过程中主要遇到问题如下：</p>
 <ol>
 <li><strong>再详细的教程摆在你面前，你仍有可能犯傻。</strong>跟着教程只字不差的阅读，并理解对是很重要的。例如教程2中有个步骤这样的：将_config.yml里面的deploy 属性下的 type 改成 git。    我傻愣愣的把type: github改成 git: github。直接就把属性这俩字给忽略不计了。当然后续命令就进行不下去了。其实仔细看就能看出问题来。但当时我愣是没发现，临近晚上12点，我决定先休息，明日再战。果然，第二天大清早起来重新看这段话的时候，我立刻惊醒，把type: github改成 type: git，自己挖坑自己填。接下来，我擦亮眼睛一步步往前推进，在教程2结束的时候，我已经可以通过网络在yourname.github.io（比如我的就是yanlinx.github.io）访问页面。</li>
-<li><p><strong>模仿是很重要，但对反复出现的重点内容需特别注意并记下来。</strong>例如建站过程中重复最多的命令就是</p>
-<blockquote>
-<p>hexo generate<br>hexo deploy<br>简写：<strong>hexo g -d</strong></p>
+<li><strong>模仿是很重要，但对反复出现的重点内容需特别注意并记下来。</strong>例如建站过程中重复最多的命令就是<blockquote>
+<p>hexo generate<br>hexo deploy<br>简写：<strong>hexo g -d</strong><br>generate(产生/生成)和deploy（部署），也就是说每次在本地文档进行修改之后都需发布以上几个命令重新生成页面，部署到网络端去，否则刷新网页是没反应的。教程2和3在讲到发布博文和更改博客主题的时候都有讲到这几个命令。在教程3后面提到博客主题个性化配置的时候，作者没再强调。我就忘记了，直接打开hexo/themes/_config.yml，在里面修改后保存。当然，刷新网页后没有任何反应。后来才意识到这几个是发布命令。这里耽搁了很长时间，搜google发现都是在展示主题配置如何更改，没提到接下来要干什么。后来才在一个教程中看到作者提醒到每次完成配置时需按hexo g -d发布。</p>
 </blockquote>
-<p>generate(产生/生成)和deploy（部署），也就是说每次在本地文档进行修改之后都需发布以上几个命令重新生成页面，部署到网络端去，否则刷新网页是没反应的。教程2和3在讲到发布博文和更改博客主题的时候都有讲到这几个命令。在教程3后面提到博客主题个性化配置的时候，作者没再强调。我就忘记了，直接打开hexo/themes/_config.yml，在里面修改后保存。当然，刷新网页后没有任何反应。后来才意识到这几个是发布命令。这里耽搁了很长时间，搜google发现都是在展示主题配置如何更改，没提到接下来要干什么。后来才在一个教程中看到作者提醒到每次完成配置时需按hexo g -d发布。</p>
 </li>
 <li><strong>小心复制粘贴引发的错误。</strong>例如：教程中2中有一个命令是这样的：<br>一看到命令这么长我当即就复制粘贴进去，结果反馈回来是错误的。我再定睛一看两个符号的长度是不一样的，我把save前面的破折号删除改成“-”，结果就对了。</li>
 <li><strong>注意格式。</strong>如下图，冒号后面一定得加空格，否则会报错。教程中有提过这一点。我刚开始还很小心，到后面更改主题配置的时候，修改的东西一多，就没注意，错了一个，结果发布命令时一直报错。直到搜索google才查出问题所在。<br><br></li>
@@ -250,7 +258,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="利用GitHub-hexo搭建个人博客—元学习实践" data-title="" data-url="http://yoursite.com/2016/11/14/利用GitHub-hexo搭建个人博客—元学习实践/"></div>
+	<div class="ds-thread" data-thread-key="利用GitHub-hexo搭建个人博客—元学习实践" data-title="利用GitHub+hexo搭建个人博客—元学习实践" data-url="http://yoursite.com/2016/11/14/利用GitHub-hexo搭建个人博客—元学习实践/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
